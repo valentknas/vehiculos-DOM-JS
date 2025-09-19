@@ -13,6 +13,8 @@ const valorMarca = document.getElementById('marca-input').value;
 const valorModelo = document.getElementById('modelo-input').value;
 const valorKm = document.getElementById('km-input').value;
 const valorPrecio = document.getElementById('precio-input').value;
+const deleteBtn = document.getElementById('eliminar').value;
+const shopBtn = document.getElementById('comprar').value;
 
 if (valorFoto === "" || valorNombre === "" || valorMarca === "" || valorModelo === "" || valorKm === "" || valorPrecio === "") {
     alert('Por favor es obligatorio llenar todos los campos')
@@ -111,6 +113,8 @@ if (valorFoto === "" || valorNombre === "" || valorMarca === "" || valorModelo =
 else {
     const nuevaTarjeta = createVehiculoCard (valorFoto, valorNombre, valorMarca, valorModelo, valorKm, valorPrecio);
     contenedor.appendChild(nuevaTarjeta);
+
+    eventsToVehiculo(nuevaTarjeta)
     form.reset()
 }
 
@@ -120,3 +124,21 @@ else {
 }
 
 addVehiculoCard();
+
+function eventsToVehiculo(nuevaTarjeta){
+    const deleteBtn = nuevaTarjeta.querySelector('.btn-danger');
+
+    deleteBtn.addEventListener('click',()=>{
+            nuevaTarjeta.remove();
+
+        })
+
+    const shopBtn = nuevaTarjeta.querySelector('.btn-success');
+
+
+    shopBtn.addEventListener('click',()=>{
+        alert('Has comprado nuestro vehiculo');
+    })
+
+}
+
