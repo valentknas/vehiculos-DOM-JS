@@ -32,8 +32,8 @@ function createVehiculoCard () {
     imagen.classList.add('w-100');
     imagen.setAttribute('alt','foto-vehiculo');
 
-    const tarjetas = createElement('div');
-    tarjetas.classList.add('card-body');
+    const cuerpoTarjetas = createElement('div');
+    cuerpoTarjetas.classList.add('card-body');
 
     const h3 = createElement('h3');
     h3.classList.add('card-title');
@@ -58,6 +58,27 @@ function createVehiculoCard () {
 
     const boton2 = createElement('button');
     boton2.classList.add('btn', 'btn-danger');
+
+    contenedor.appendChild(col);
+    col.appendChild(card);
+
+    card.appendChild(imagen);
+    cuerpoTarjetas.appendChild(h3);
+    cuerpoTarjetas.appendChild(h4);
+    cuerpoTarjetas.appendChild(segundoh4);
+    cuerpoTarjetas.appendChild(tercerh4);
+
+
+    contenedorBtns.appendChild(boton1);
+    contenedorBtns.appendChild(boton2);
+
+
+
+
+    
+
+
+    
 
 
 };
