@@ -7,6 +7,10 @@ const addBtn = document.getElementById('agregar-vehiculo');
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
 
+
+
+
+
 const valorFoto = document.getElementById('foto-input').value;
 const valorNombre = document.getElementById('nombre-input').value;
 const valorMarca = document.getElementById('marca-input').value;
