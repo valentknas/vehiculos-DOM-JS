@@ -111,6 +111,10 @@ button {
   transition: 0.5s;
 }
 
+.cont-productos .product-card .car-img {
+  width: 150px;
+}
+
 
 
 
