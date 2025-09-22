@@ -63,4 +63,34 @@ button {
   background: red;
 }
 
+#cont-carrito{
+  background-color: lightcoral;
+  width: 30%;
+  height: 100vh;
+  position:absolute;
+  right: 0;
+  padding: 40px;
+  z-index: 1;
+
+}
+
+#cont-carrito .product-card{
+  border: 1px solid;
+ 
+
+}
+
+#cont-carrito .product-card .cont-info{
+  padding-left: 40px;
+
+}
+#cont-carrito .product-card .button {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
 
