@@ -206,7 +206,10 @@
                 btnEliminar.textContent = 'X'
 
                 btnEliminar.addEventListener('click', () => {
-                    tarjeta.remove();
+                    tarjeta.remove();      
+                    const precio = tarjeta.querySelector('h4').textContent;
+                    total = total - parseInt(precio);
+                    valorTotal.textContent = total;
                 })
               
 
