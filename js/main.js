@@ -4,6 +4,8 @@
         const contenedor = document.getElementById('contenedor-tarjetas');
         const addBtn = document.getElementById('agregar-vehiculo');
         const carrito = document.querySelector('.cont-productos');
+        const valorTotal = document.getElementById('total');
+        let total = 0;
 
         form.addEventListener('submit', (e)=>{
             e.preventDefault();
@@ -149,6 +151,8 @@
 
                 const nuevaTarjetaCarrito = createProducts(imagen, nombre, marca, precio);
                 carrito.appendChild(nuevaTarjetaCarrito);
+                total = total + parseInt(precio);
+                valorTotal.textContent = total
 
             })
             
@@ -237,6 +241,15 @@
 
         });
         };
+
+
+
+
+
+
+
+
+
 
         
 
