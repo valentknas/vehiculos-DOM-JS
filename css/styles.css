@@ -115,6 +115,56 @@ button {
   width: 150px;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: #2c3e50;
+    color: #fff;
+}
+
+thead td {
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tablaProductos tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+#tablaProductos tr:hover {
+    background: #e8f4ff;
+    transition: background 0.3s;
+}
+
+#tablaProductos td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
 
 
 
