@@ -1,4 +1,4 @@
-const tablaBody = document.getElementById('#tabla-productos tbody');
+const tablaBody = document.querySelector('#tablaProductos tbody');
  
 document.addEventListener('DOMContentLoaded', ()=>{
 const vehiculosGuardadosEnCarrito = JSON.parse(localStorage.getItem('vehiculosCarrito'))||[];

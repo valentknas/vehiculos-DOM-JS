@@ -178,7 +178,7 @@ function createVehiculoCard(valorFoto, valorNombre, valorMarca, valorModelo, val
     segundoH4.textContent = valorModelo;
 
     const tercerH4 = document.createElement('h4');
-    tercerH4.classList.add('card-text');
+    tercerH4.classList.add('card-texts');
     tercerH4.textContent = valorKm;
 
     const h2 = document.createElement('h2');
@@ -244,6 +244,8 @@ function eventsToVehiculo(nuevaTarjeta, idVehiculo) {
     shopBtn.addEventListener('click', () => {
         const imagen = nuevaTarjeta.querySelector('img').src;
         const nombre = nuevaTarjeta.querySelector('h3').textContent;
+        const modelo = nuevaTarjeta.querySelector('h4').textContent;
+        const kilometraje = nuevaTarjeta.querySelector(cart)
         const marca = nuevaTarjeta.querySelector('h4').textContent;
         const precio = nuevaTarjeta.querySelector('h2').textContent;
         const nuevaTarjetaCarrito = createProducts(imagen, nombre, marca, precio);
@@ -252,6 +254,8 @@ function eventsToVehiculo(nuevaTarjeta, idVehiculo) {
         const carritoDeProductos = {
             foto : imagen,
             nombre : nombre,
+            modelo : modelo,
+            kilometraje: kilometraje,
             marca : marca,
             precio : precio
         }
